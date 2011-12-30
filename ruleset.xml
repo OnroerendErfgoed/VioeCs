@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<ruleset name="VIOE">
+	<description>
+		Een op maat gemaakte code standaard voor projecten van het 
+		agentschap Onroerend Erfgoed (vroeger gekend als VIOE).
+	</description>
+	
+	<rule ref="Generic">
+		<exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie" />
+		<exclude name="Generic.Formatting.MultipleStatementAlignment" />
+		<exclude name="Generic.Formatting.NoSpaceAfterCast" />
+		<exclude name="Generic.VersionControl.SubversionProperties" />
+		<exclude name="Generic.PHP.UpperCaseConstant" />
+		<include name="Generic.PHP.LowerCaseConstant" />
+	</rule>
+
+	<rule ref="PEAR.Functions.ValidDefaultValue"/>
+	<rule ref="PEAR.WhiteSpace.ScopeClosingBrace"/>
+	<rule ref="Squiz.Functions.GlobalFunction"/>
+
+
+	<!-- Lines can be 100 chars long, show errors at 120 chars -->
+	<rule ref="Generic.Files.LineLength">
+		<properties>
+	   		<property name="lineLimit" value="100"/>
+	   		<property name="absoluteLineLimit" value="120"/>
+	  	</properties>
+	</rule>
+
+	<!-- Use Unix newlines -->
+	<rule ref="Generic.Files.LineEndings">
+		 <properties>
+			 <property name="eolChar" value="\n"/>
+		 </properties>
+  	</rule>
+
+</ruleset>
