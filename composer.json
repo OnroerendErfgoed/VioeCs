@@ -1,0 +1,20 @@
+{
+	"name": "OnroerendErfgoed/CodeSniffer",
+
+	"description": "Library containing PHP CodeSniffer rules for php projects by Flanders Heritage Agency.",
+
+	"homepage": "https://github.com/OnroerendErfgoed/VioeCs",
+
+	"version": "0.1.0",
+
+	"license": "EUPL",
+
+	"authors": [
+		{
+			"name": "Koen Van Daele",
+			"email": "koen.vandaele@rwo.vlaanderen.be"
+		}
+
+	],
+
+}
